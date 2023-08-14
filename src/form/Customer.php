@@ -1,0 +1,51 @@
+<?php
+
+return [
+	'form',
+	[
+		'template'=>'row',
+		'attr_class'=>'form-control',
+		[
+			'import'=>'Name',
+			'text'=>'姓名',
+		],
+		'Sex',
+		'Age',
+		'CustomerType',
+		[
+			'text',
+			'name'=>'phone',
+			'text'=>'联系号码',
+		],
+		[
+			'email',
+			'name'=>'email',
+			'text'=>'邮箱',
+		],
+		[
+			'text',
+			'name'=>'position',
+			'text'=>'职业',
+		],
+		[
+			'text',
+			'name'=>'company_name',
+			'text'=>'公司名称',
+		],
+		[
+			'text',
+			'name'=>'company_address',
+			'text'=>'公司地址',
+		],
+		[
+			'text',
+			'name'=>'home',
+			'text'=>'家庭地址',
+		],
+		'Ordernum',
+		'Switch',
+		'Csrf',
+	],
+		
+];
+

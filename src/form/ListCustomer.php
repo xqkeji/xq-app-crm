@@ -1,0 +1,25 @@
+<?php
+return [
+	'list_form',
+	'row'=>[
+		'class'=>'text-center',
+	],
+	[
+		'ListId',
+		[
+			'import'=>'ListName',
+			'text'=>'姓名',
+			'attr_style'=>'width:120px;',
+		],
+		'ListSex',
+		'ListAge',
+		'ListCustomerType',
+		'ListPhone',
+		'ListEmail',
+		'ListCompany',
+		'ListOrdernum',
+		'ListSwitch',
+		'ListCreateTime',
+		'ListEditDelete',
+	]
+];

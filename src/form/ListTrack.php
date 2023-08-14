@@ -1,0 +1,28 @@
+<?php
+return [
+	'list_form',
+	'row'=>[
+		'class'=>'text-center',
+	],
+	[
+		'ListId',
+		'ListCustomerId',
+		 [
+			'import'=>'ListPhone',
+			'name'=>'date',
+			'text'=>'日期'
+		 ],
+		 [
+			'import'=>'ListDesc',
+			'name'=>'content',
+			'text'=>'交流内容',
+		 ],
+		 [
+			'import'=>'ListDesc',
+			'name'=>'result',
+			'text'=>'成效',
+		 ],
+		'ListCreateTime',
+		'ListEditDelete',
+	]
+];

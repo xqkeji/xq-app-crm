@@ -1,0 +1,34 @@
+<?php
+return [
+	//授权入口类别（后台管理）
+	'admin'=>[
+		'auth'=>[
+			'customer_type'=>['admin','add','edit','delete','change','b_delete'],
+			'customer'=>['admin','add','edit','delete','change','b_delete'],
+			'credit_level'=>['admin','add','edit','delete','change','b_delete'],
+			'credit'=>['admin','add','edit','delete','change','b_delete'],
+			'order'=>['admin','add','edit','delete','change','b_delete'],
+			'track'=>['admin','add','edit','delete','change','b_delete'],
+		],
+		/*
+		//只有得到授权并登录后才有访问权限
+		'auth'=>[
+			'控制器名称'=>['动作1','动作2'],
+		],
+		//登录后就有访问权限
+		'login'=>[
+			'控制器名称'=>['动作1','动作2'],
+		],
+		*/
+	],
+	//授权入口类别（会员中心）
+	'member'=>[
+		
+	],
+	'guest'=>[
+		/*
+		游客就可以访问的功能
+		'控制器名称'=>['动作1','动作2'],
+		*/
+	],
+];

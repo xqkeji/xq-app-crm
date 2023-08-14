@@ -1,0 +1,20 @@
+<?php
+return [
+	'list_form',
+	'row'=>[
+		'class'=>'text-center',
+	],
+	[
+		'ListId',
+		'ListCustomerId',
+		'ListCreditId',
+		'ListLevel',
+		[
+			'import'=>'ListDesc',
+			'text'=>'备注',
+		],
+		'ListSwitch',
+		'ListCreateTime',
+		'ListEditDelete',
+	]
+];

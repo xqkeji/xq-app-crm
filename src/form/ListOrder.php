@@ -1,0 +1,27 @@
+<?php
+return [
+	'list_form',
+	'row'=>[
+		'class'=>'text-center',
+	],
+	[
+		'ListId',
+		'ListCustomerId',
+		[
+			'import'=>'Name',
+			'text'=>'产品名称',
+		],
+		[
+			'import'=>'ListPrice',
+			'text'=>'订单总价',
+		],
+		'ListOrderStatus',
+		[
+			'import'=>'ListDesc',
+			'name'=>'address',
+			'text'=>'送货地址',
+		],
+		'ListCreateTime',
+		'ListEditDelete',
+	]
+];
