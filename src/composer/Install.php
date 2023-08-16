@@ -40,11 +40,9 @@ class Install
                 }
                 $mustInsert=true;
                 $manager = new Manager($uri,['serverSelectionTryOnce'=>false,'serverSelectionTimeoutMS'=>500,'connectTimeoutMS'=>500]);
-                $id = new ObjectId("58514b454a495f524f4f5430");
-                $filter = ['_id' => $id];
                 $cmd = new Command([
-                    'count' => 'content_category', 
-                    'query' => $filter 
+                    'count' => 'crm_customer_type', 
+                    'query' => [] 
                 ]);
                 $result=$manager->executeCommand($database, $cmd)->toArray();
                 if (!empty($result)) {
@@ -57,39 +55,81 @@ class Install
                 if($mustInsert)
                 {
                     $bulk = new BulkWrite();
-                    $user=[
-                        '_id'=>$id,
-                        'name'=>'XQKEJI_TREE_ROOT',
-                        'image'=>'',
-                        'type'=>1,
-                        'url'=>'',
-                        'model'=>'info',
+                    $type=[
+                        'name'=>'普通客户',
+                        'desc'=>'普通客户',
                         'status'=>1,
-                        'seo_title'=>'',
-                        'seo_keyword'=>'',
-                        'seo_desc'=>'',
-                        'form'=>'info',
-                        'list_form'=>'list_info',
-                        'search_form'=>'search_info',
-                        'layout_view'=>'layout_info',
-                        'index_view'=>'index_info',
-                        'category_view'=>'cat_info',
-                        'list_view'=>'list_info',
-                        'search_view'=>'search_info',
-                        'show_view'=>'show_info',
-                        'hits'=>0,
-                        'parent_id'=>'',
-                        'depth'=>0,
-                        'left_value'=>1,
-                        'right_value'=>2,
+                        'ordernum'=>1,
                         'create_time'=>time(),
                         'update_time'=>time(),
                     ];
-                    $bulk->insert($user);
-                    $manager->executeBulkWrite($database.'.content_category', $bulk); 
-                    echo "初始化content_category,创建根节点成功！\r\n";
+                    $bulk->insert($type);
+                    $type=[
+                        'name'=>'银牌客户',
+                        'desc'=>'银牌客户',
+                        'status'=>1,
+                        'ordernum'=>2,
+                        'create_time'=>time(),
+                        'update_time'=>time(),
+                    ];
+                    $bulk->insert($type);
+                    $type=[
+                        'name'=>'金牌客户',
+                        'desc'=>'金牌客户',
+                        'status'=>1,
+                        'ordernum'=>3,
+                        'create_time'=>time(),
+                        'update_time'=>time(),
+                    ];
+                    $bulk->insert($type);
+                    $manager->executeBulkWrite($database.'.crm_customer_type', $bulk); 
+                    echo "初始化客户类型成功！\r\n";
                 }
-                
+                $cmd = new Command([
+                    'count' => 'crm_credit_level', 
+                    'query' => [] 
+                ]);
+                $result=$manager->executeCommand($database, $cmd)->toArray();
+                if (!empty($result)) {
+                    $count = intval($result[0]->n);
+                    if($count>0)
+                    {
+                        $mustInsert=false;
+                    }
+                }
+                if($mustInsert)
+                {
+                    $bulk = new BulkWrite();
+                    $type=[
+                        'name'=>'一般',
+                        'desc'=>'一般',
+                        'status'=>1,
+                        'ordernum'=>1,
+                        'create_time'=>time(),
+                        'update_time'=>time(),
+                    ];
+                    $bulk->insert($type);
+                    $type=[
+                        'name'=>'良好',
+                        'desc'=>'良好',
+                        'status'=>1,
+                        'ordernum'=>2,
+                        'create_time'=>time(),
+                        'update_time'=>time(),
+                    ];
+                    $bulk->insert($type);
+                    $type=[
+                        'name'=>'优秀',
+                        'desc'=>'优秀',
+                        'status'=>1,
+                        'ordernum'=>3,
+                        'create_time'=>time(),
+                        'update_time'=>time(),
+                    ];
+                    $bulk->insert($type);
+                    $manager->executeBulkWrite($database.'.crm_credit_level', $bulk); 
+                    echo "初始化信用等级类型成功！\r\n";
+                }
 
             }
             else

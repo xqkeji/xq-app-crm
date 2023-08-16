@@ -21,6 +21,7 @@
         ]
     },
     "require": {
-        "xqkeji/xq-app-admin":"^1.0"
+        "xqkeji/xq-app-admin":"^1.0",
+		"xqkeji/xq-com-bootstrap-select":"^1.0"
     }
 }
