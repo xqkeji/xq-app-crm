@@ -1,5 +1,5 @@
 <?php
-namespace xqkeji\app\content\composer;
+namespace xqkeji\app\crm\composer;
 use MongoDB\Driver\Manager;
 use MongoDB\Driver\Command;
 use MongoDB\Driver\BulkWrite;
