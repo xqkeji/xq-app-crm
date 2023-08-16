@@ -41,8 +41,7 @@ class Install
                 $mustInsert=true;
                 $manager = new Manager($uri,['serverSelectionTryOnce'=>false,'serverSelectionTimeoutMS'=>500,'connectTimeoutMS'=>500]);
                 $cmd = new Command([
-                    'count' => 'crm_customer_type', 
-                    'query' => [] 
+                    'count' => 'crm_customer_type'
                 ]);
                 $result=$manager->executeCommand($database, $cmd)->toArray();
                 if (!empty($result)) {
@@ -86,8 +85,7 @@ class Install
                     echo "初始化客户类型成功！\r\n";
                 }
                 $cmd = new Command([
-                    'count' => 'crm_credit_level', 
-                    'query' => [] 
+                    'count' => 'crm_credit_level'
                 ]);
                 $result=$manager->executeCommand($database, $cmd)->toArray();
                 if (!empty($result)) {
