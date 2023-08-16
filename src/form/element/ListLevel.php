@@ -9,7 +9,14 @@ return [
 			$items=[
 				1=>'一级','二级','三级','四级','五级','六级','七级','八级','九级',
 			];
-			return $items[$value];
+			if(isset($items[$value]))
+			{
+				return $items[$value];
+			}
+			else
+			{
+				return '';
+			}
 		},
 	],	
 ];

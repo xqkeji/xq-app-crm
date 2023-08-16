@@ -8,8 +8,15 @@ return [
 		'format'=>function($element,$value){
 			$model=\xqkeji\mvc\builder\Model::getModel('customer_type');
 			$type=$model->find($value);
-			$name=$type->getAttr('name');
-			return $name;
+			if($type)
+			{
+				$name=$type->getAttr('name');
+				return $name;
+			}
+			else
+			{
+				return '';
+			}
 		},
 	],	
 ];

@@ -19,7 +19,7 @@ return [
 					$rows[$key]=$val;
 				}
 			}
-			$element->setOptions($rows);
+			$element->setItems($rows);
 
 			
 		},
