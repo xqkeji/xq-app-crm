@@ -17,9 +17,8 @@ return [
 		'ListPhone',
 		'ListEmail',
 		'ListCompany',
-		'ListOrdernum',
 		'ListSwitch',
-		'ListCreateTime',
+		'ListCreateDate',
 		'ListEditDelete',
 	]
 ];
