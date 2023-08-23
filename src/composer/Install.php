@@ -84,6 +84,7 @@ class Install
                     $manager->executeBulkWrite($database.'.crm_customer_type', $bulk); 
                     echo "初始化客户类型成功！\r\n";
                 }
+                $mustInsert=true;
                 $cmd = new Command([
                     'count' => 'crm_credit_level'
                 ]);
