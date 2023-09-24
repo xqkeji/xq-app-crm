@@ -7,7 +7,11 @@ return [
 			'title'=>'客户类别管理',
 			'icon'=>'bi bi-columns',
 		],
-		
+		[
+			'url'=>'customer_source/admin',
+			'title'=>'客户来源管理',
+			'icon'=>'bi bi-view-stacked',
+		],
 		[
 			'url'=>'customer/admin',
 			'title'=>'客户信息管理',

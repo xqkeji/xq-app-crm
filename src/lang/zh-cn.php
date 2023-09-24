@@ -20,6 +20,25 @@ return [
     'crm module customer_type change auth'=>'修改客户类别状态',
     'crm module customer_type b_delete auth'=>'批量删除客户类别',
 
+    //来源页面
+	'crm customer_source admin title'=>'客户来源管理',
+    'crm customer_source add title'=>'添加客户来源',
+    'crm customer_source edit title'=>'编辑客户来源',
+    'crm customer_source add success'=>'添加客户来源成功',
+    'crm customer_source add failed'=>'添加客户来源失败',
+    'crm customer_source edit success'=>'编辑客户来源成功',
+    'crm customer_source edit failed'=>'编辑客户来源失败',
+    'crm customer_source delete success'=>'删除客户来源成功',
+    'crm customer_source delete failed'=>'删除客户来源失败',
+    //来源权限
+    'crm module customer_source auth'=>'客户来源管理',
+    'crm module customer_source admin auth'=>'客户来源列表',
+    'crm module customer_source add auth'=>'添加客户来源',
+    'crm module customer_source edit auth'=>'编辑客户来源',
+    'crm module customer_source delete auth'=>'删除客户来源',
+    'crm module customer_source change auth'=>'修改客户来源状态',
+    'crm module customer_source b_delete auth'=>'批量删除客户来源',
+
     //客户信息
     'crm customer admin title'=>'客户信息管理',
     'crm customer add title'=>'添加客户信息',

@@ -4,6 +4,7 @@ return [
 	'admin'=>[
 		'auth'=>[
 			'customer_type'=>['admin','add','edit','delete','change','b_delete'],
+			'customer_source'=>['admin','add','edit','delete','change','b_delete'],
 			'customer'=>['admin','add','edit','delete','change','b_delete'],
 			'credit_level'=>['admin','add','edit','delete','change','b_delete'],
 			'credit'=>['admin','add','edit','delete','change','b_delete'],

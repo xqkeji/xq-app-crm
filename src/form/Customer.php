@@ -10,7 +10,7 @@ return [
 			'text'=>'姓名',
 		],
 		'Sex',
-		'Age',
+		'CustomerSource',
 		'CustomerType',
 		[
 			'text',
@@ -25,7 +25,7 @@ return [
 		[
 			'text',
 			'name'=>'position',
-			'text'=>'职业',
+			'text'=>'职位',
 		],
 		[
 			'text',
@@ -39,8 +39,12 @@ return [
 		],
 		[
 			'text',
-			'name'=>'home',
-			'text'=>'家庭地址',
+			'name'=>'country',
+			'text'=>'国家',
+		],
+		[
+			'import'=>'Desc',
+			'text'=>'备注',
 		],
 		'Ordernum',
 		'Switch',
