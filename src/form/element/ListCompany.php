@@ -1,7 +1,7 @@
 <?php
 return [
 	'ListItem',
-	'class'=>'xq-order',
+	'attr_class'=>'xq-order',
 	'name'=>'company',
 	'text'=>'公司',
 ];

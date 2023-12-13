@@ -1,7 +1,7 @@
 <?php
 return [
 	'ListItem',
-	'class'=>'xq-order',
+	'attr_class'=>'xq-order',
 	'name'=>'source_id',
 	'text'=>'客户来源',
 	'attr_style'=>'width:100px;',
