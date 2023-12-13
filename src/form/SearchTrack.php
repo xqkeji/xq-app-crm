@@ -7,7 +7,7 @@ return [
 			'select_picker',
 			'template'=>'search',
 			'text'=>'搜索客户：',
-			'name'=>'customer_id#=',
+			'name'=>'xq-s-customer_id,eq',
 			'attr_class'=>'form-control me-2',
 			'attr_title'=>'请选择一个客户',
 			'attr_data-live-search'=>'true',
