@@ -49,6 +49,7 @@ return [
     'crm customer edit failed'=>'编辑客户信息失败',
     'crm customer delete success'=>'删除客户信息成功',
     'crm customer delete failed'=>'删除客户信息失败',
+    'crm customer export title'=>'导出客户信息',
     //客户信息权限
     'crm module customer auth'=>'客户信息管理',
     'crm module customer admin auth'=>'客户信息列表',

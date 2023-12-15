@@ -20,5 +20,6 @@ return [
 		'ListSwitch',
 		'ListCreateDate',
 		'ListEditDelete',
-	]
+	],
+	'foot'=>'ListCustomerFoot',
 ];
