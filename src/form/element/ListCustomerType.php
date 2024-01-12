@@ -6,17 +6,17 @@ return [
 	'attr_style'=>'width:100px;',
 	'event'=>[
 		'format'=>function($element,$value){
-			$model=\xqkeji\mvc\builder\Model::getModel('customer_type');
-			$type=$model->find($value);
-			if($type)
+			if(!empty($value))
 			{
-				$name=$type->getAttr('name');
-				return $name;
+				$model=\xqkeji\mvc\builder\Model::getModel('customer_type');
+				$type=$model->find($value);
+				if($type)
+				{
+					$name=$type->getAttr('name');
+					return $name;
+				}
 			}
-			else
-			{
-				return '';
-			}
+			return '';
 		},
 	],	
 ];

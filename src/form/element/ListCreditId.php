@@ -6,17 +6,17 @@ return [
 	'attr_style'=>'width:100px;',
 	'event'=>[
 		'format'=>function($element,$value){
-			$credit_level=\xqkeji\mvc\builder\Model::getModel('credit_level');
-			$type=$credit_level->find($value);
-			if($type)
+			if(!empty($value))
 			{
-				$name=$type->getAttr('name');
-				return $name;
+				$credit_level=\xqkeji\mvc\builder\Model::getModel('credit_level');
+				$type=$credit_level->find($value);
+				if($type)
+				{
+					$name=$type->getAttr('name');
+					return $name;
+				}		
 			}
-			else
-			{
-				return '';
-			}
+			return '';
 		},
 	],	
 ];

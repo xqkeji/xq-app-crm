@@ -14,7 +14,7 @@ return [
 		'ListCustomerType',
 		'ListPhone',
 		'ListEmail',
-		'ListCompany',
+		'ListCompanyName',
 		'ListCustomerSource',
 		'ListCountry',
 		'ListSwitch',
