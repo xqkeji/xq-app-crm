@@ -3,7 +3,7 @@ return [
 	'ListItem',
 	'name'=>'type_id',
 	'text'=>'类别',
-	'attr_style'=>'width:100px;',
+	'attr_style'=>'min-width:100px;',
 	'event'=>[
 		'format'=>function($element,$value){
 			if(!empty($value))

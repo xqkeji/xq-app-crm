@@ -8,8 +8,9 @@ return [
 		'ListId',
 		'ListCustomerId',
 		[
-			'import'=>'Name',
+			'name'=>'name',
 			'text'=>'产品名称',
+			'attr_style'=>'min-width:150px;'
 		],
 		[
 			'import'=>'ListPrice',

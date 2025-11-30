@@ -3,7 +3,7 @@ return [
 	'ListItem',
 	'name'=>'customer_id',
 	'text'=>'客户',
-	'attr_style'=>'width:120px;',
+	'attr_style'=>'min-width:120px;',
 	'event'=>[
 		'format'=>function($element,$value){
 			if(!empty($value))

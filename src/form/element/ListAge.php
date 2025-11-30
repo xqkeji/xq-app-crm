@@ -3,5 +3,5 @@ return [
 	'ListItem',
 	'name'=>'age',
 	'text'=>'年龄',
-	'attr_style'=>'width:60px;',
+	'attr_style'=>'min-width:60px;',
 ];

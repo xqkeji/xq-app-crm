@@ -2,7 +2,7 @@
 return [
 	'form',
 	'attr_method'=>'get',
-	'attr_class'=>'form-inline d-flex justify-content-end',
+	'attr_class'=>'d-flex flex-wrap justify-content-end gap-2',
 	[
 		[
 			'text',

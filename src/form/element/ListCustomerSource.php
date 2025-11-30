@@ -4,7 +4,7 @@ return [
 	'attr_class'=>'xq-order',
 	'name'=>'source_id',
 	'text'=>'客户来源',
-	'attr_style'=>'width:100px;',
+	'attr_style'=>'min-width:100px;',
 	'event'=>[
 		'format'=>function($element,$value){
 			if(!empty($value))

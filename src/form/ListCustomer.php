@@ -7,9 +7,9 @@ return [
 	[
 		'ListId',
 		[
-			'import'=>'ListName',
+			'name'=>'name',
 			'text'=>'姓名',
-			'attr_style'=>'width:120px;',
+			'attr_style'=>'min-width:120px;',
 		],
 		'ListCustomerType',
 		'ListPhone',

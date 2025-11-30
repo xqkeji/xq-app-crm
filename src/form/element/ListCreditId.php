@@ -3,7 +3,7 @@ return [
 	'ListItem',
 	'name'=>'credit_id',
 	'text'=>'信用',
-	'attr_style'=>'width:100px;',
+	'attr_style'=>'min-width:100px;',
 	'event'=>[
 		'format'=>function($element,$value){
 			if(!empty($value))

@@ -3,7 +3,7 @@ return [
 	'ListItem',
 	'name'=>'level',
 	'text'=>'级别',
-	'attr_style'=>'width:80px;',
+	'attr_style'=>'min-width:60px;',
 	'event'=>[
 		'format'=>function($element,$value){
 			$items=[

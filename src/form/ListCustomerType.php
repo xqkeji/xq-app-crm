@@ -7,8 +7,9 @@ return [
 	[
 		'ListId',
 		[
-			'import'=>'ListName',
+			'name'=>'name',
 			'text'=>'类别名称',
+			'attr_style'=>'min-width:120px;'
 		],
 		'ListDesc',
 		'ListOrdernum',

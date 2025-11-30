@@ -1,8 +1,9 @@
 <?php
 return [
+	//管理后台入口
 	'admin'=>[
-		'title'=>'客户关系管理',
-		'children'=>[
+		'title'=>'客户关系管理',//客户关系管理模块
+		'children'=>[//子菜单
 			[
 				'url'=>'customer_type/admin',
 				'title'=>'客户类别管理',
