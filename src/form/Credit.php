@@ -8,12 +8,9 @@ class Credit extends Form
 		'~CustomerId',
 		'~CreditId',
 		[
-			'$select',
+			'@Education',
 			'name'=>'level',
 			'text'=>'级别',
-			'attrs'=>[
-				'class'=>'form-select',
-			],
 			'items'=>[
 				1=>'一级','二级','三级','四级','五级','六级','七级','八级','九级',
 			],

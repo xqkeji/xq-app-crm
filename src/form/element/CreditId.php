@@ -10,7 +10,7 @@ class CreditId extends Select
 		'class'=>'form-select',
 	];	
     protected $template='@row';
-	public static function beforeRender()
+	public function beforeRender()
 	{
 		$model=\xqkeji\mvc\builder\Model::getModel('credit_level');
 		$credit_level=$model->where('status',1)->order('ordernum')->select();

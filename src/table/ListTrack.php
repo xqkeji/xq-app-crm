@@ -12,7 +12,7 @@ class ListTrack extends Table
 		'@ListId',
 		'~ListCustomerId',
 		 [
-			'@ListPhone',
+			'~ListPhone',
 			'name'=>'date',
 			'text'=>'日期'
 		 ],

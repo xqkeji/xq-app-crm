@@ -1,7 +1,7 @@
 <?php
 namespace xqkeji\app\crm\form\element;
 use xqkeji\form\element\SelectPicker;
-class Search extends SelectPicker
+class SearchCustomer extends SelectPicker
 {
 	protected $name='xq-s-customer_id,eq';
 	protected $text='搜索客户：';
