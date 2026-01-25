@@ -11,7 +11,7 @@ class ListCustomer extends Table
 	protected $el=[
 		'@ListId',
 		[
-			'@Name',
+			'@ListName',
 			'text'=>'姓名',
 			'attr_style'=>'min-width:120px;',
 		],
