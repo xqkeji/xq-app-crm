@@ -7,7 +7,7 @@ class Track extends Form
 	protected $el=[
 		'~CustomerId',
 		[
-			'$date',
+			'@Date',
 			'name'=>'date',
 			'text'=>'交流日期',
 		],
