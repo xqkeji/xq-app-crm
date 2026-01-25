@@ -14,32 +14,27 @@ class Customer extends Form
 		'~CustomerType',
 		'~Phone',
 		[
-			'$text',
-			'name'=>'phone',
-			'text'=>'联系号码',
-		],
-		[
-			'$email',
+			'@Email',
 			'name'=>'email',
 			'text'=>'邮箱',
 		],
 		[
-			'$text',
+			'@Name',
 			'name'=>'position',
 			'text'=>'职位',
 		],
 		[
-			'text',
+			'@Name',
 			'name'=>'company_name',
 			'text'=>'公司名称',
 		],
 		[
-			'$text',
+			'@Name',
 			'name'=>'company_address',
 			'text'=>'公司地址',
 		],
 		[
-			'$text',
+			'@Name',
 			'name'=>'country',
 			'text'=>'国家',
 		],
@@ -48,7 +43,7 @@ class Customer extends Form
 			'text'=>'备注',
 		],
 		'@Ordernum',
-		'@Switch',
+		'@SwitchCheck',
 		'@Csrf',
 		'@SubmitReset',
 	];

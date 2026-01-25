@@ -11,7 +11,7 @@ class CreditLevel extends Form
 		],
 		'@Desc',
 		'@Ordernum',
-		'@Switch',
+		'@SwitchCheck',
 		'@Csrf',
 		'@SubmitReset',
 	];

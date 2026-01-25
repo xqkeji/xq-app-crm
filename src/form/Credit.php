@@ -22,7 +22,7 @@ class Credit extends Form
 			'@Desc',
 			'text'=>'备注',
 		],
-		'@Switch',
+		'@SwitchCheck',
 		'@Csrf',
 		'@SubmitReset'
 	];
