@@ -1,18 +1,21 @@
 <?php
-return [
-	'form',
-	[
-		'template'=>'row',
-		'attr_class'=>'form-control',
+namespace xqkeji\app\crm\form;
+use xqkeji\form\Form;
+class CustomerType extends Form
+{
+	protected $name='customer_type';
+	protected $el=[
 		[
-			'import'=>'Name',
+			'@Name',
 			'text'=>'类别名称',
 		],
-		'Desc',
-		'Ordernum',
-		'Switch',
-		'Csrf',
-	],
-		
-];
+		'@Desc',
+		'@Ordernum',
+		'@SwitchCheck',
+		'@Csrf',
+		'@SubmitReset',
+	];
+}
+
+
 

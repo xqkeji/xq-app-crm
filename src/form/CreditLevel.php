@@ -1,19 +1,19 @@
 <?php
-
-return [
-	'form',
-	[
-		'template'=>'row',
-		'attr_class'=>'form-control',
+namespace xqkeji\app\crm\form;
+use xqkeji\form\Form;
+class CreditLevel extends Form
+{
+	protected $name='credit_level';
+	protected $el=[
 		[
-			'import'=>'Name',
+			'@Name',
 			'text'=>'等级名称',
 		],
-		'Desc',
-		'Ordernum',
-		'Switch',
-		'Csrf',
-	],
-		
-];
+		'@Desc',
+		'@Ordernum',
+		'@Switch',
+		'@Csrf',
+		'@SubmitReset',
+	];
+}
 

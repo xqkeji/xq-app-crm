@@ -1,28 +1,28 @@
 <?php
-
-return [
-	'form',
-	[
-		'template'=>'row',
-		'attr_class'=>'form-control',
-		'CustomerId',
+namespace xqkeji\app\crm\form;
+use xqkeji\form\Form;
+class Track extends Form
+{
+	protected $name='track';
+	protected $el=[
+		'~CustomerId',
 		[
-			'date',
+			'$date',
 			'name'=>'date',
 			'text'=>'交流日期',
 		],
 		[
-			'import'=>'Desc',
+			'@Desc',
 			'name'=>'content',
 			'text'=>'交流内容',
 		],
 		[
-			'import'=>'Desc',
+			'@Desc',
 			'name'=>'result',
 			'text'=>'成效',
 		],
-		'Csrf',
-	],
-		
-];
+		'@Csrf',
+		'@SubmitReset',
+	];
+}
 

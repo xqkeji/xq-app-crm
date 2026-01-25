@@ -1,19 +1,20 @@
 <?php
-
-return [
-	'form',
-	[
-		'template'=>'row',
-		'attr_class'=>'form-control',
+namespace xqkeji\app\crm\form;
+use xqkeji\form\Form;
+class CustomerSource extends Form
+{
+	protected $name='customer_source';
+	protected $el=[
 		[
-			'import'=>'Name',
+			'@Name',
 			'text'=>'来源名称',
 		],
-		'Desc',
-		'Ordernum',
-		'Switch',
-		'Csrf',
-	],
-		
-];
+		'@Desc',
+		'@Ordernum',
+		'@SwitchCheck',
+		'@Csrf',
+		'@SubmitReset',
+	];
+}
+
 

@@ -1,15 +1,17 @@
 <?php
 namespace xqkeji\app\crm\form\element;
-use xqkeji\form\element\Select;
-class CustomerId extends Select
+use xqkeji\form\element\SelectPicker;
+class Search extends SelectPicker
 {
-
-	protected $name='customer_id';
-	protected $text='客户';
+	protected $name='xq-s-customer_id,eq';
+	protected $text='搜索客户：';
 	protected $attrs=[
-		'class'=>'form-select',
+		'class'=>'form-control me-2',
+		'title'=>'请选择一个客户',
+		'data-live-search'=>'true',
+		'data-width'=>'100%;',
 	];
-    protected $template='@row';
+    protected $template='@search';
 	public function beforeRender()
 	{
 		$model=\xqkeji\mvc\builder\Model::getModel('customer');
@@ -27,4 +29,5 @@ class CustomerId extends Select
 		}
 		$this->setItems($rows);
 	}
+					
 }

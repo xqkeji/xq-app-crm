@@ -1,28 +1,29 @@
 <?php
-
-return [
-	'form',
-	[
-		'template'=>'row',
-		'attr_class'=>'form-control',
-		'CustomerId',
-		'CreditId',
+namespace xqkeji\app\crm\form;
+use xqkeji\form\form;
+class Credit extends Form
+{
+	protected $name='credit';
+	protected $el=[
+		'~CustomerId',
+		'~CreditId',
 		[
-			'select',
+			'$select',
 			'name'=>'level',
 			'text'=>'级别',
-			'attr_class'=>'form-select',
+			'attrs'=>[
+				'class'=>'form-select',
+			],
 			'items'=>[
 				1=>'一级','二级','三级','四级','五级','六级','七级','八级','九级',
 			],
 		],
 		[
-			'import'=>'Desc',
+			'@Desc',
 			'text'=>'备注',
 		],
-		'Switch',
-		'Csrf',
-	],
-		
-];
-
+		'@Switch',
+		'@Csrf',
+		'@SubmitReset'
+	];
+}

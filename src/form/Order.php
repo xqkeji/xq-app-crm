@@ -1,46 +1,43 @@
 <?php
-
-return [
-	'form',
-	[
-		'template'=>'row',
-		'attr_class'=>'form-control',
-		'CustomerId',
+namespace xqkeji\app\crm\form;
+use xqkeji\form\Form;
+class Order extends Form
+{
+	protected $name='order';
+	protected $el=[
+		'~CustomerId',
 		[
-			'import'=>'Name',
+			'@Name',
 			'text'=>'产品名称',
 		],
 		[
-			'number',
-			'name'=>'price',
+			'@Price',
 			'text'=>'订单总价',
-			'attr_step'=>'0.01',
-			'defaultValue'=>'0.00',
 		],
 		[
-			'radio',
+			'@Sex',
 			'name'=>'order_status',
 			'text'=>'状态',
-			'template'=>'check',
 			'items'=>[
 				1=>'已出','未出'
 			],
 			'defaultValue'=>2
 		],
 		[
-			'import'=>'Name',
-			'name'=>'address',
+			'@Address',
 			'text'=>'送货地址',
 		],
-		'Phone',
-		'Paytype',
+		'~Phone',
+		'~Paytype',
 		[
-			'import'=>'Desc',
+			'@Desc',
 			'text'=>'订单备注',
 		],
-		'Switch',
-		'Csrf',
-	],
-		
-];
+		'@SwitchCheck',
+		'@Csrf',
+		'@SubmitReset'
+	];
+}
+
+
 
