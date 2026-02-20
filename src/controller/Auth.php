@@ -7,6 +7,6 @@ class Auth extends Controller
     public function token()
     {
         $token = $this->security->getToken();
-        return $token;
+        echo $token;
     }
 }
