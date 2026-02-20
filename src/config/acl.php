@@ -27,6 +27,6 @@ return [
 		
 	],
 	'guest'=>[
-		‘auth’=>['get_token']
+		'auth'=>['get_token']
 	],
 ];
