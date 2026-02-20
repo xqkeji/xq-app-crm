@@ -4,7 +4,7 @@ use xqkeji\mvc\Controller;
 
 class Auth extends Controller
 {
-    public function getToken()
+    public function token()
     {
         $token = $this->security->getToken();
         return $token;
