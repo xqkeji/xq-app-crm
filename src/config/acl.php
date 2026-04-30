@@ -5,8 +5,8 @@ return [
 		'auth'=>[
 			'customer_type'=>['admin','add','edit','delete','change','b_delete','getoption'],
 			'customer_source'=>['admin','add','edit','delete','change','b_delete','getoption'],
-			'customer'=>['admin','add','edit','delete','change','b_delete','export'],
-			'credit_level'=>['admin','add','edit','delete','change','b_delete'],
+			'customer'=>['admin','add','edit','delete','change','b_delete','export','getoption'],
+			'credit_level'=>['admin','add','edit','delete','change','b_delete','getoption'],
 			'credit'=>['admin','add','edit','delete','change','b_delete'],
 			'order'=>['admin','add','edit','delete','change','b_delete'],
 			'track'=>['admin','add','edit','delete','change','b_delete'],
