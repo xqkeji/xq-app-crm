@@ -27,6 +27,7 @@ class ListOrder extends Table
 			'name'=>'address',
 			'text'=>'送货地址',
 		],
+		'@ListSwitch',
 		'@ListCreateTime',
 		'@ListEditDelete',
 	];
