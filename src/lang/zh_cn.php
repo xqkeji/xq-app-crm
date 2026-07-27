@@ -19,7 +19,7 @@ return [
     'crm module customer_type delete auth'=>'删除客户类别',
     'crm module customer_type change auth'=>'修改客户类别状态',
     'crm module customer_type b_delete auth'=>'批量删除客户类别',
-
+    'crm module customer_type getoption auth'=>'获取客户类别列表',
     //来源页面
 	'crm customer_source admin title'=>'客户来源管理',
     'crm customer_source add title'=>'添加客户来源',
@@ -38,6 +38,7 @@ return [
     'crm module customer_source delete auth'=>'删除客户来源',
     'crm module customer_source change auth'=>'修改客户来源状态',
     'crm module customer_source b_delete auth'=>'批量删除客户来源',
+    'crm module customer_source getoption auth'=>'获取客户来源列表',
 
     //客户信息
     'crm customer admin title'=>'客户信息管理',
