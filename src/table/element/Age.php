@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 namespace xqkeji\app\crm\table\element;
 use xqkeji\form\element\ListItem;
-class ListAge extends ListItem
+class Age extends ListItem
 {
 	protected $name = 'age';
 	protected $text = '年龄';

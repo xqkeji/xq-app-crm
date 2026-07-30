@@ -1,8 +1,8 @@
-<?php
+﻿<?php
 
 namespace xqkeji\app\crm\table\element;
 use xqkeji\form\element\ListItem;
-class ListEmail extends ListItem
+class Email extends ListItem
 {
 	protected $name = 'email';
 	protected $text = '邮箱';

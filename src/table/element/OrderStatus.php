@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 namespace xqkeji\app\crm\table\element;
 use xqkeji\form\element\ListItem;
-class ListOrderStatus extends ListItem
+class OrderStatus extends ListItem
 {
 	protected $name = 'order_status';
 	protected $text = '订单状态';

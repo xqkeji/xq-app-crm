@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 namespace xqkeji\app\crm\table\element;
 use xqkeji\form\element\ListItem;
-class ListCustomerType extends ListItem
+class CustomerType extends ListItem
 {
 	protected $name = 'type_id';
 	protected $text = '类别';

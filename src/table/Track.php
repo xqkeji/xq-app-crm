@@ -1,33 +1,33 @@
-<?php
+﻿<?php
 namespace xqkeji\app\crm\table;
 use xqkeji\form\Table;
-class ListTrack extends Table
+class Track extends Table
 {
 	protected $name = 'track';
 	protected $row = [
 		'class'=>'text-center',
 	];
-	protected $foot = '@ListFoot';
+	protected $foot = '@Foot';
 	protected $el = [
-		'@ListId',
-		'~ListCustomerId',
+		'@Id',
+		'~CustomerId',
 		 [
-			'~ListPhone',
+			'~Phone',
 			'name'=>'date',
 			'text'=>'日期'
 		 ],
 		 [
-			'@ListDesc',
+			'@Desc',
 			'name'=>'content',
 			'text'=>'交流内容',
 		 ],
 		 [
-			'@ListDesc',
+			'@Desc',
 			'name'=>'result',
 			'text'=>'成效',
 		 ],
-		'@ListCreateTime',
-		'@ListEditDelete',
+		'@CreateTime',
+		'@EditDelete',
 	];
 }
 

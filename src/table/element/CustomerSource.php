@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 namespace xqkeji\app\crm\table\element;
 use xqkeji\form\element\ListItem;
-class ListCustomerSource extends ListItem
+class CustomerSource extends ListItem
 {
 	protected $name = 'source_id';
 	protected $text = '客户来源';

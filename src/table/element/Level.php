@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 namespace xqkeji\app\crm\table\element;
 use xqkeji\form\element\ListItem;
-class ListLevel extends ListItem
+class Level extends ListItem
 {
 	protected $name = 'level';
 	protected $text = '级别';

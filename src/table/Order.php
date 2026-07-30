@@ -1,35 +1,35 @@
-<?php
+﻿<?php
 namespace xqkeji\app\crm\table;
 use xqkeji\form\Table;
-class ListOrder extends Table
+class Order extends Table
 {
 	protected $name = 'order';
 	protected $row = [
 		'class'=>'text-center',
 	];
-	protected $foot = '@ListFoot';
+	protected $foot = '@Foot';
 	protected $el = [
-		'@ListId',
-		'~ListCustomerId',
+		'@Id',
+		'~CustomerId',
 		[
-			'@ListName',
+			'@Name',
 			'name'=>'name',
 			'text'=>'产品名称',
 			'attr_style'=>'min-width:150px;',
 		],
 		[
-			'@ListPrice',
+			'@Price',
 			'text'=>'订单总价',
 		],
-		'~ListOrderStatus',
+		'~OrderStatus',
 		[
-			'@ListDesc',
+			'@Desc',
 			'name'=>'address',
 			'text'=>'送货地址',
 		],
-		'@ListSwitch',
-		'@ListCreateTime',
-		'@ListEditDelete',
+		'@Switch',
+		'@CreateTime',
+		'@EditDelete',
 	];
 }
 

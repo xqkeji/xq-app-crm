@@ -1,25 +1,26 @@
-<?php
+﻿<?php
 namespace xqkeji\app\crm\table\element;
 use xqkeji\form\element\ListItem;
-class ListCustomerId extends ListItem
+class CreditId extends ListItem
 {
-	protected $name = 'customer_id';
-	protected $text = '客户';
+	protected $name = 'credit_id';
+	protected $text = '信用';
 	protected $attrs = [
-		'style'=>'min-width:120px;',
+		'style'=>'min-width:100px;',
 	];
 	public function format($value)
 	{
 		if(!empty($value))
 		{
-			$customer=\xqkeji\mvc\builder\Model::getModel('customer');
-			$type=$customer->find($value);
+			$credit_level=\xqkeji\mvc\builder\Model::getModel('credit_level');
+			$type=$credit_level->find($value);
 			if($type)
 			{
 				$name=$type->getAttr('name');
 				return $name;
-			}
+			}		
 		}
 		return '';
 	}
 }
+
