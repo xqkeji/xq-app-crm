@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 namespace xqkeji\app\crm\table;
 use xqkeji\form\Table;
 class Customer extends Table
