@@ -17,7 +17,7 @@ class CustomerType extends Table
 		],
 		'@Desc',
 		'@Ordernum',
-		'@Switch',
+		'@SwitchCheck',
 		'@CreateTime',
 		'@EditDelete',
 	];

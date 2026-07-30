@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 namespace xqkeji\app\crm\table\element;
 use xqkeji\form\element\ListItem;
 class OrderStatus extends ListItem

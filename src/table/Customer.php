@@ -21,7 +21,7 @@ class Customer extends Table
 		'~CompanyName',
 		'~CustomerSource',
 		'~Country',
-		'@Switch',
+		'@SwitchCheck',
 		'@CreateDate',
 		'@EditDelete',
 	];

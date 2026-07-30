@@ -17,7 +17,7 @@ class CustomerSource extends Table
 		],
 		'@Desc',
 		'@Ordernum',
-		'@Switch',
+		'@SwitchCheck',
 		'@CreateTime',
 		'@EditDelete',
 	];

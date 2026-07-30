@@ -13,7 +13,7 @@ class CreditLevel extends Table
 		'@Name',
 		'@Desc',
 		'@Ordernum',
-		'@Switch',
+		'@SwitchCheck',
 		'@CreateTime',
 		'@EditDelete',
 	];

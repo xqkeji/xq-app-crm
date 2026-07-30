@@ -17,7 +17,7 @@ class Credit extends Table
 			'@Desc',
 			'text'=>'备注',
 		],
-		'@Switch',
+		'@SwitchCheck',
 		'@CreateTime',
 		'@EditDelete',
 	];
